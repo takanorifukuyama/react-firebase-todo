@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import firebase from 'firebase';
 import 'firebase/firestore';
 import { firestore } from './plugins/firebase';
