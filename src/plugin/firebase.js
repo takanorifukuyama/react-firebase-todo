@@ -1,3 +1,4 @@
+import firebase from 'firebase';
 //Initialize Firebase   
 export const firebaseConfig = {     
 	apiKey: "AIzaSyB81IJx_bK3d4p1Oa8Ruyd12K1vuqcK0Xc",     
@@ -7,3 +8,6 @@ export const firebaseConfig = {
 	storageBucket: "react-firebase-todo-190e4.appspot.com",     
 	messagingSenderId: "373129575730"   
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+export const firebaseDb = firebaseApp.database();
